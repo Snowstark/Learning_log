@@ -10,4 +10,7 @@ urlpatterns = [
 
     # Show all topics
     url(r'^topics/$', views.topics, name='topics'),
+
+    # Special topic to show
+    url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
 ]
